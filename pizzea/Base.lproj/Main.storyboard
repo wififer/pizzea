@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A8l-0r-ghE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tamaño View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Tamaño View Controller" customClass="ViewController" customModule="pizzea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configure su pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub3-2O-sRw">
+                                <rect key="frame" x="20" y="112" width="544" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRF-YO-T0i">
+                                <rect key="frame" x="273" y="228" width="54" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqZ-s7-ki9">
+                                <rect key="frame" x="140" y="271" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5BS-iA-6iq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="q1b-pP-4qJ"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxb-i6-PMp">
+                                <rect key="frame" x="268" y="453" width="64" height="30"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMasa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Blc-gw-IdQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hRF-YO-T0i" secondAttribute="centerX" id="20K-Y5-I4i"/>
+                            <constraint firstAttribute="centerX" secondItem="Vxb-i6-PMp" secondAttribute="centerX" id="8Fh-GK-e7X"/>
+                            <constraint firstItem="QqZ-s7-ki9" firstAttribute="top" secondItem="hRF-YO-T0i" secondAttribute="bottom" constant="25" id="9ai-0s-tHf"/>
+                            <constraint firstItem="ub3-2O-sRw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="Acz-1O-ysC"/>
+                            <constraint firstAttribute="centerX" secondItem="QqZ-s7-ki9" secondAttribute="centerX" id="Oe0-Hl-Cqy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ub3-2O-sRw" secondAttribute="trailing" constant="20" id="bJ8-aR-QvB"/>
+                            <constraint firstItem="ub3-2O-sRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="e2J-wt-cZJ"/>
+                            <constraint firstItem="Vxb-i6-PMp" firstAttribute="top" secondItem="QqZ-s7-ki9" secondAttribute="bottom" constant="20" id="pMA-pe-Iq2"/>
+                            <constraint firstItem="hRF-YO-T0i" firstAttribute="top" secondItem="ub3-2O-sRw" secondAttribute="bottom" constant="95" id="s7j-xb-yey"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PmE-O8-nHV"/>
+                    <connections>
+                        <outlet property="tamanoLbl" destination="hRF-YO-T0i" id="9A9-iN-6E7"/>
+                        <outlet property="tamanoPicker" destination="QqZ-s7-ki9" id="ecA-ax-ssy"/>
+                        <outlet property="tituloLbl" destination="ub3-2O-sRw" id="0wS-p5-QSK"/>
+                        <segue destination="0Nh-sc-cBo" kind="show" identifier="tamanoToMasa" id="WpX-oH-UCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="402"/>
+        </scene>
+        <!--Masa View Controller-->
+        <scene sceneID="zFW-vF-hH2">
+            <objects>
+                <viewController id="0Nh-sc-cBo" userLabel="Masa View Controller" customClass="masaViewController" customModule="pizzea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uig-Ng-Zi3"/>
+                        <viewControllerLayoutGuide type="bottom" id="6A0-sd-nkr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zc4-gu-VZl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configure su pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-Jw-Szp">
+                                <rect key="frame" x="47" y="115" width="506" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sr-Lc-5qC">
+                                <rect key="frame" x="281" y="231" width="38" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-sd-jKb">
+                                <rect key="frame" x="140" y="274" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0Nh-sc-cBo" id="0jn-0I-kos"/>
+                                    <outlet property="delegate" destination="0Nh-sc-cBo" id="jcA-ew-FHN"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjs-qS-Ydc">
+                                <rect key="frame" x="268" y="456" width="64" height="30"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8iZ-sd-jKb" firstAttribute="top" secondItem="6Sr-Lc-5qC" secondAttribute="bottom" constant="25" id="6jm-JT-SiN"/>
+                            <constraint firstItem="6Sr-Lc-5qC" firstAttribute="top" secondItem="C1E-Jw-Szp" secondAttribute="bottom" constant="95" id="CYA-Uo-p23"/>
+                            <constraint firstItem="C1E-Jw-Szp" firstAttribute="centerX" secondItem="6Sr-Lc-5qC" secondAttribute="centerX" id="EGA-92-pmc"/>
+                            <constraint firstItem="C1E-Jw-Szp" firstAttribute="centerX" secondItem="8iZ-sd-jKb" secondAttribute="centerX" id="F7w-E8-dVj"/>
+                            <constraint firstItem="C1E-Jw-Szp" firstAttribute="top" secondItem="Uig-Ng-Zi3" secondAttribute="bottom" constant="51" id="Mvz-Ja-u99"/>
+                            <constraint firstItem="C1E-Jw-Szp" firstAttribute="centerX" secondItem="Yjs-qS-Ydc" secondAttribute="centerX" id="ZsH-8V-KGx"/>
+                            <constraint firstItem="C1E-Jw-Szp" firstAttribute="leading" secondItem="Zc4-gu-VZl" secondAttribute="leadingMargin" constant="31" id="m1c-ya-dmE"/>
+                            <constraint firstItem="Yjs-qS-Ydc" firstAttribute="top" secondItem="8iZ-sd-jKb" secondAttribute="bottom" constant="20" id="sKG-TY-Q2u"/>
+                            <constraint firstItem="Yjs-qS-Ydc" firstAttribute="centerX" secondItem="Zc4-gu-VZl" secondAttribute="centerX" id="x8q-G9-F9p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="masaPicker" destination="8iZ-sd-jKb" id="7pb-Hh-HKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ok-jc-FCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="400"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vxh-sg-kzp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A8l-0r-ghE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1H-lf-ALP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="49X-Eh-WKu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrk-Qw-FO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="402"/>
+        </scene>
+    </scenes>
+</document>
