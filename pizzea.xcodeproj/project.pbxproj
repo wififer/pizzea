@@ -14,6 +14,9 @@
 		9D168A501BF72E450026D2F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D168A4E1BF72E450026D2F7 /* LaunchScreen.xib */; };
 		9D168A5C1BF72E450026D2F7 /* pizzeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D168A5B1BF72E450026D2F7 /* pizzeaTests.swift */; };
 		9D168A661BF73B620026D2F7 /* masaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D168A651BF73B620026D2F7 /* masaViewController.swift */; };
+		9D1D0B771BF8921B0069D360 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B761BF8921B0069D360 /* QuesoViewController.swift */; };
+		9D1D0B791BF89E610069D360 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B781BF89E610069D360 /* IngredientesViewController.swift */; };
+		9D1D0B7B1BF8A9590069D360 /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		9D168A5A1BF72E450026D2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D168A5B1BF72E450026D2F7 /* pizzeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzeaTests.swift; sourceTree = "<group>"; };
 		9D168A651BF73B620026D2F7 /* masaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masaViewController.swift; sourceTree = "<group>"; };
+		9D1D0B761BF8921B0069D360 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
+		9D1D0B781BF89E610069D360 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
+		9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				9D168A4E1BF72E450026D2F7 /* LaunchScreen.xib */,
 				9D168A431BF72E450026D2F7 /* Supporting Files */,
 				9D168A651BF73B620026D2F7 /* masaViewController.swift */,
+				9D1D0B761BF8921B0069D360 /* QuesoViewController.swift */,
+				9D1D0B781BF89E610069D360 /* IngredientesViewController.swift */,
+				9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */,
 			);
 			path = pizzea;
 			sourceTree = "<group>";
@@ -215,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1D0B771BF8921B0069D360 /* QuesoViewController.swift in Sources */,
 				9D168A481BF72E450026D2F7 /* ViewController.swift in Sources */,
+				9D1D0B7B1BF8A9590069D360 /* ConfirmacionViewController.swift in Sources */,
+				9D1D0B791BF89E610069D360 /* IngredientesViewController.swift in Sources */,
 				9D168A461BF72E450026D2F7 /* AppDelegate.swift in Sources */,
 				9D168A661BF73B620026D2F7 /* masaViewController.swift in Sources */,
 			);
@@ -411,6 +423,7 @@
 				9D168A611BF72E450026D2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D168A621BF72E450026D2F7 /* Build configuration list for PBXNativeTarget "pizzeaTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				9D168A641BF72E450026D2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,7 +15,7 @@ class masaViewController: UIViewController {
     @IBOutlet weak var masaPicker: UIPickerView!
     
     var masas = ["Delgada","Gruesa", "Crujiente"]
-
+ var miMasa:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +39,30 @@ class masaViewController: UIViewController {
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        miMasa = masas[row]
         return masas[row]
     }
 
     
 
-    /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "masaToQueso") {
+            let svc = segue.destinationViewController as QuesoViewController;
+            
+            svc.toPassTamano = toPassTamano
+            svc.toPassMasa = miMasa
+            
+            
+        }
     }
-    */
+    
+    @IBAction func toQueso(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("masaToQueso", sender:self)
+    }
+
 
 }
