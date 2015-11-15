@@ -352,8 +352,87 @@
                     <view key="view" contentMode="scaleToFill" id="yTb-ZF-Jbt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta es su Pizza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLZ-YX-8Fu" userLabel="titulo">
+                                <rect key="frame" x="232" y="92" width="137" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="VFm-us-86O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-Hy-Wl5" userLabel="Masa">
+                                <rect key="frame" x="55" y="236" width="424" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="424" id="ojJ-kZ-mJn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvK-Oe-3Y2" userLabel="Queso">
+                                <rect key="frame" x="55" y="275" width="424" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAK-yf-TdO" userLabel="Ingredientes">
+                                <rect key="frame" x="55" y="322" width="424" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si quiere cambiar algo navegue hacia atrás" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcY-Di-Ctu" userLabel="Cambiar">
+                                <rect key="frame" x="55" y="409" width="490" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNC-6A-D1H" userLabel="Confirmar">
+                                <rect key="frame" x="256" y="484" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Jvz-wd-vr2"/>
+                                </constraints>
+                                <state key="normal" title="Confirmar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPN-nA-9D3" userLabel="tamaño">
+                                <rect key="frame" x="55" y="187" width="450" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dLZ-YX-8Fu" secondAttribute="centerX" id="ARH-E5-ZHa"/>
+                            <constraint firstItem="xAK-yf-TdO" firstAttribute="top" secondItem="JvK-Oe-3Y2" secondAttribute="bottom" constant="26" id="INO-tB-jpg"/>
+                            <constraint firstAttribute="centerX" secondItem="HcY-Di-Ctu" secondAttribute="centerX" id="JNn-MO-BQc"/>
+                            <constraint firstItem="HcY-Di-Ctu" firstAttribute="leading" secondItem="JvK-Oe-3Y2" secondAttribute="leading" id="MPV-PX-Sfh"/>
+                            <constraint firstItem="HcY-Di-Ctu" firstAttribute="leading" secondItem="QPN-nA-9D3" secondAttribute="leading" id="Oil-PF-dOr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QPN-nA-9D3" secondAttribute="trailing" constant="79" id="Re1-R6-ebZ"/>
+                            <constraint firstItem="gNC-6A-D1H" firstAttribute="top" secondItem="HcY-Di-Ctu" secondAttribute="bottom" constant="63" id="Swc-95-Q3m"/>
+                            <constraint firstItem="ibm-Hy-Wl5" firstAttribute="top" secondItem="QPN-nA-9D3" secondAttribute="bottom" constant="28" id="TgU-So-co5"/>
+                            <constraint firstAttribute="centerX" secondItem="gNC-6A-D1H" secondAttribute="centerX" id="Veq-nr-Trb"/>
+                            <constraint firstItem="JvK-Oe-3Y2" firstAttribute="trailing" secondItem="xAK-yf-TdO" secondAttribute="trailing" id="Vga-y6-5Rn"/>
+                            <constraint firstItem="HcY-Di-Ctu" firstAttribute="top" secondItem="xAK-yf-TdO" secondAttribute="bottom" constant="75" id="Zlv-8S-KV1"/>
+                            <constraint firstItem="HcY-Di-Ctu" firstAttribute="leading" secondItem="ibm-Hy-Wl5" secondAttribute="leading" id="bGT-kR-agD"/>
+                            <constraint firstItem="JvK-Oe-3Y2" firstAttribute="trailing" secondItem="ibm-Hy-Wl5" secondAttribute="trailing" id="bnH-6w-O1E"/>
+                            <constraint firstItem="HcY-Di-Ctu" firstAttribute="leading" secondItem="yTb-ZF-Jbt" secondAttribute="leadingMargin" constant="39" id="gtt-Fh-Z7W"/>
+                            <constraint firstItem="JvK-Oe-3Y2" firstAttribute="top" secondItem="ibm-Hy-Wl5" secondAttribute="bottom" constant="18" id="m2v-U0-bgv"/>
+                            <constraint firstItem="dLZ-YX-8Fu" firstAttribute="top" secondItem="Pgc-DB-Izt" secondAttribute="bottom" constant="28" id="ozD-wO-6Sx"/>
+                            <constraint firstItem="HcY-Di-Ctu" firstAttribute="leading" secondItem="xAK-yf-TdO" secondAttribute="leading" id="qok-Hb-coU"/>
+                            <constraint firstItem="Dkd-6c-WCu" firstAttribute="top" secondItem="HcY-Di-Ctu" secondAttribute="bottom" constant="179" id="xtT-7k-8E7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ingredientesLbl" destination="xAK-yf-TdO" id="naH-uJ-9sD"/>
+                        <outlet property="masaLbl" destination="ibm-Hy-Wl5" id="r8e-cl-RX4"/>
+                        <outlet property="quesoLbl" destination="JvK-Oe-3Y2" id="o9O-LH-sU4"/>
+                        <outlet property="tamanoLbl" destination="QPN-nA-9D3" id="PD7-mN-Aac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9L-Kg-rJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

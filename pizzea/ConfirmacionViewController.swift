@@ -15,11 +15,19 @@ class ConfirmacionViewController: UIViewController {
     var  toPassMasa:String = ""
     var  toPassQueso:String = ""
 
+    @IBOutlet weak var ingredientesLbl: UILabel!
+    @IBOutlet weak var quesoLbl: UILabel!
+    @IBOutlet weak var masaLbl: UILabel!
+    @IBOutlet weak var tamanoLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         println("toPassIngredientes: \(toPassIngredientes)")
+        ingredientesLbl.text = "Ingredientes: \(toPassIngredientes[0]) \(toPassIngredientes[1]) \(toPassIngredientes[2])  \(toPassIngredientes[3]) \(toPassIngredientes[4])"
+        quesoLbl.text = "Queso: \(toPassQueso)"
+        masaLbl.text = "Masa: \(toPassMasa)"
+        tamanoLbl.text = "Tamaño: \(toPassTamano)"
 
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
