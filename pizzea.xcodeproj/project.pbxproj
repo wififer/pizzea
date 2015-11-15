@@ -17,6 +17,7 @@
 		9D1D0B771BF8921B0069D360 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B761BF8921B0069D360 /* QuesoViewController.swift */; };
 		9D1D0B791BF89E610069D360 /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B781BF89E610069D360 /* IngredientesViewController.swift */; };
 		9D1D0B7B1BF8A9590069D360 /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */; };
+		9DB46E531BF928C400814E80 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DB46E521BF928C400814E80 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		9D1D0B761BF8921B0069D360 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
 		9D1D0B781BF89E610069D360 /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
 		9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
+		9DB46E521BF928C400814E80 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		9D168A371BF72E440026D2F7 = {
 			isa = PBXGroup;
 			children = (
+				9DB46E521BF928C400814E80 /* .gitignore */,
 				9D168A421BF72E450026D2F7 /* pizzea */,
 				9D168A581BF72E450026D2F7 /* pizzeaTests */,
 				9D168A411BF72E450026D2F7 /* Products */,
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB46E531BF928C400814E80 /* .gitignore in Resources */,
 				9D168A4B1BF72E450026D2F7 /* Main.storyboard in Resources */,
 				9D168A501BF72E450026D2F7 /* LaunchScreen.xib in Resources */,
 				9D168A4D1BF72E450026D2F7 /* Images.xcassets in Resources */,
