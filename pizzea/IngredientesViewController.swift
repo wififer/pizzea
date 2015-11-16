@@ -34,9 +34,9 @@ class IngredientesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Tamaño: \(toPassTamano)")
-        println("Masa: \(toPassMasa)")
-        println("Queso: \(toPassQueso)")
+        print("Tamaño: \(toPassTamano)")
+        print("Masa: \(toPassMasa)")
+        print("Queso: \(toPassQueso)")
         // Do any additional setup after loading the view.
          jamonSw.addTarget(self, action: Selector("stateChangedJamon:"), forControlEvents: UIControlEvents.ValueChanged)
         pepperoniSw.addTarget(self, action: Selector("stateChangedPepperoni:"), forControlEvents: UIControlEvents.ValueChanged)
@@ -60,14 +60,14 @@ class IngredientesViewController: UIViewController {
        
         
         if (segue.identifier == "ingredientesToConfirmacion") {
-            let svc = segue.destinationViewController as ConfirmacionViewController;
-            println("if (segue.identifier == ingredientesToConfirmacion)")
+            let svc = segue.destinationViewController as! ConfirmacionViewController;
+            print("if (segue.identifier == ingredientesToConfirmacion)")
 
             svc.toPassTamano = toPassTamano
             svc.toPassMasa = toPassMasa
             svc.toPassQueso = toPassQueso
             svc.toPassIngredientes = ingredientes
-            println("Ingredientes.count: \(ingredientes.count)")
+            print("Ingredientes.count: \(ingredientes.count)")
 
           
             
@@ -75,11 +75,11 @@ class IngredientesViewController: UIViewController {
     }
     
     @IBAction func toConfirmacion(sender: AnyObject) {
-        println("Ingredientes: \(ingredientes)")
+        print("Ingredientes: \(ingredientes)")
         
         
         if (ingredientes.count != 0){
-            println("Ingredientes: \(ingredientes)")
+            print("Ingredientes: \(ingredientes)")
 
             self.performSegueWithIdentifier("ingredientesToConfirmacion", sender:self)
 
@@ -96,7 +96,7 @@ class IngredientesViewController: UIViewController {
     func stateChangedJamon(switchState: UISwitch) {
         
         if switchState.on {
-            println("Jamon")
+            print("Jamon")
             ingredientes.insert("Jamon",atIndex:ingredientes.count)
             posJamon = ingredientes.count-1
             
@@ -128,7 +128,7 @@ class IngredientesViewController: UIViewController {
     
     func stateChangedPimiento(switchState: UISwitch) {
         if switchState.on {
-            println("Pimiento")
+            print("Pimiento")
             ingredientes.insert("Pimiento",atIndex:ingredientes.count)
             posPimiento = ingredientes.count-1
         } else {
@@ -139,11 +139,11 @@ class IngredientesViewController: UIViewController {
     
     func stateChangedAnchoa(switchState: UISwitch) {
         if switchState.on {
-            println("Anchoa add")
+            print("Anchoa add")
             ingredientes.insert("Anchoa",atIndex:ingredientes.count)
             posAnchoa = ingredientes.count-1
         } else {
-            println("Anchoa OFF")
+            print("Anchoa OFF")
             ingredientes.removeAtIndex(posAnchoa)
             
         }

@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "tamanoToMasa") {
-            let svc = segue.destinationViewController as masaViewController;
+            let svc = segue.destinationViewController as! masaViewController;
             
             svc.toPassTamano = self.miTamano
            

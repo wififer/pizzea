@@ -20,7 +20,7 @@ class masaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("Tamaño: \(toPassTamano)")
+        print("Tamaño: \(toPassTamano)")
 
         // Do any additional setup after loading the view.
     }
@@ -50,7 +50,7 @@ class masaViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "masaToQueso") {
-            let svc = segue.destinationViewController as QuesoViewController;
+            let svc = segue.destinationViewController as! QuesoViewController;
             
             svc.toPassTamano = toPassTamano
             svc.toPassMasa = miMasa

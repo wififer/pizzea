@@ -14,6 +14,7 @@ class ConfirmacionViewController: UIViewController {
     var  toPassTamano:String = ""
     var  toPassMasa:String = ""
     var  toPassQueso:String = ""
+    var ingredientes2:String = ""
 
     @IBOutlet weak var ingredientesLbl: UILabel!
     @IBOutlet weak var quesoLbl: UILabel!
@@ -21,8 +22,13 @@ class ConfirmacionViewController: UIViewController {
     @IBOutlet weak var tamanoLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("toPassIngredientes: \(toPassIngredientes)")
-        ingredientesLbl.text = "Ingredientes: \(toPassIngredientes[0]) \(toPassIngredientes[1]) \(toPassIngredientes[2])  \(toPassIngredientes[3]) \(toPassIngredientes[4])"
+        print("toPassIngredientes: \(toPassIngredientes)")
+        
+        for v in toPassIngredientes {
+           self.ingredientes2 += "\n\(v)"
+
+        }
+        ingredientesLbl.text = "Ingredientes: \(self.ingredientes2)"
         quesoLbl.text = "Queso: \(toPassQueso)"
         masaLbl.text = "Masa: \(toPassMasa)"
         tamanoLbl.text = "Tamaño: \(toPassTamano)"

@@ -25,8 +25,8 @@ class QuesoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Tamaño: \(toPassTamano)")
-        println("Masa: \(toPassMasa)")
+        print("Tamaño: \(toPassTamano)")
+        print("Masa: \(toPassMasa)")
         // Do any additional setup after loading the view, typically from a nib.
         tituloLbl.adjustsFontSizeToFitWidth = true
         tituloLbl.sizeToFit()
@@ -59,7 +59,7 @@ class QuesoViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "quesoToIngredientes") {
-            let svc = segue.destinationViewController as IngredientesViewController;
+            let svc = segue.destinationViewController as! IngredientesViewController;
             
             svc.toPassTamano = toPassTamano
             svc.toPassMasa = toPassMasa
