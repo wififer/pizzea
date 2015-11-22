@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BCF55F11C01BC7800566B6E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF55EF1C01BC7800566B6E /* Interface.storyboard */; };
+		1BCF55F31C01BC7800566B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF55F21C01BC7800566B6E /* Assets.xcassets */; };
+		1BCF55FA1C01BC7800566B6E /* pizzeaWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1BCF55F91C01BC7800566B6E /* pizzeaWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1BCF56011C01BC7800566B6E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF56001C01BC7800566B6E /* InterfaceController.swift */; };
+		1BCF56031C01BC7800566B6E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF56021C01BC7800566B6E /* ExtensionDelegate.swift */; };
+		1BCF56051C01BC7800566B6E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF56041C01BC7800566B6E /* NotificationController.swift */; };
+		1BCF56071C01BC7800566B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF56061C01BC7800566B6E /* Assets.xcassets */; };
+		1BCF560B1C01BC7800566B6E /* pizzeaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1BCF55ED1C01BC7700566B6E /* pizzeaWatch.app */; };
 		9D168A461BF72E450026D2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D168A451BF72E450026D2F7 /* AppDelegate.swift */; };
 		9D168A481BF72E450026D2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D168A471BF72E450026D2F7 /* ViewController.swift */; };
 		9D168A4B1BF72E450026D2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D168A491BF72E450026D2F7 /* Main.storyboard */; };
@@ -21,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1BCF55FB1C01BC7800566B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D168A381BF72E440026D2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCF55F81C01BC7800566B6E;
+			remoteInfo = "pizzeaWatch Extension";
+		};
+		1BCF56091C01BC7800566B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D168A381BF72E440026D2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCF55EC1C01BC7700566B6E;
+			remoteInfo = pizzeaWatch;
+		};
 		9D168A561BF72E450026D2F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D168A381BF72E440026D2F7 /* Project object */;
@@ -30,7 +52,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1BCF56111C01BC7800566B6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1BCF55FA1C01BC7800566B6E /* pizzeaWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCF56131C01BC7800566B6E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1BCF560B1C01BC7800566B6E /* pizzeaWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1BCF55ED1C01BC7700566B6E /* pizzeaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizzeaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCF55F01C01BC7800566B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1BCF55F21C01BC7800566B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BCF55F41C01BC7800566B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCF55F91C01BC7800566B6E /* pizzeaWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "pizzeaWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCF55FF1C01BC7800566B6E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1BCF56001C01BC7800566B6E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1BCF56021C01BC7800566B6E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1BCF56041C01BC7800566B6E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1BCF56061C01BC7800566B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BCF56081C01BC7800566B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D168A401BF72E450026D2F7 /* pizzea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizzea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D168A441BF72E450026D2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D168A451BF72E450026D2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1BCF55F61C01BC7800566B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D168A3D1BF72E450026D2F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,12 +131,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BCF55EE1C01BC7800566B6E /* pizzeaWatch */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF55EF1C01BC7800566B6E /* Interface.storyboard */,
+				1BCF55F21C01BC7800566B6E /* Assets.xcassets */,
+				1BCF55F41C01BC7800566B6E /* Info.plist */,
+			);
+			path = pizzeaWatch;
+			sourceTree = "<group>";
+		};
+		1BCF55FD1C01BC7800566B6E /* pizzeaWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF56001C01BC7800566B6E /* InterfaceController.swift */,
+				1BCF56021C01BC7800566B6E /* ExtensionDelegate.swift */,
+				1BCF56041C01BC7800566B6E /* NotificationController.swift */,
+				1BCF56061C01BC7800566B6E /* Assets.xcassets */,
+				1BCF56081C01BC7800566B6E /* Info.plist */,
+				1BCF55FE1C01BC7800566B6E /* Supporting Files */,
+			);
+			path = "pizzeaWatch Extension";
+			sourceTree = "<group>";
+		};
+		1BCF55FE1C01BC7800566B6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF55FF1C01BC7800566B6E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9D168A371BF72E440026D2F7 = {
 			isa = PBXGroup;
 			children = (
 				9DB46E521BF928C400814E80 /* .gitignore */,
 				9D168A421BF72E450026D2F7 /* pizzea */,
 				9D168A581BF72E450026D2F7 /* pizzeaTests */,
+				1BCF55EE1C01BC7800566B6E /* pizzeaWatch */,
+				1BCF55FD1C01BC7800566B6E /* pizzeaWatch Extension */,
 				9D168A411BF72E450026D2F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +179,8 @@
 			children = (
 				9D168A401BF72E450026D2F7 /* pizzea.app */,
 				9D168A551BF72E450026D2F7 /* pizzeaTests.xctest */,
+				1BCF55ED1C01BC7700566B6E /* pizzeaWatch.app */,
+				1BCF55F91C01BC7800566B6E /* pizzeaWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +230,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1BCF55EC1C01BC7700566B6E /* pizzeaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCF56121C01BC7800566B6E /* Build configuration list for PBXNativeTarget "pizzeaWatch" */;
+			buildPhases = (
+				1BCF55EB1C01BC7700566B6E /* Resources */,
+				1BCF56111C01BC7800566B6E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BCF55FC1C01BC7800566B6E /* PBXTargetDependency */,
+			);
+			name = pizzeaWatch;
+			productName = pizzeaWatch;
+			productReference = 1BCF55ED1C01BC7700566B6E /* pizzeaWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1BCF55F81C01BC7800566B6E /* pizzeaWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCF56101C01BC7800566B6E /* Build configuration list for PBXNativeTarget "pizzeaWatch Extension" */;
+			buildPhases = (
+				1BCF55F51C01BC7800566B6E /* Sources */,
+				1BCF55F61C01BC7800566B6E /* Frameworks */,
+				1BCF55F71C01BC7800566B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pizzeaWatch Extension";
+			productName = "pizzeaWatch Extension";
+			productReference = 1BCF55F91C01BC7800566B6E /* pizzeaWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		9D168A3F1BF72E450026D2F7 /* pizzea */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D168A5F1BF72E450026D2F7 /* Build configuration list for PBXNativeTarget "pizzea" */;
@@ -137,10 +271,12 @@
 				9D168A3C1BF72E450026D2F7 /* Sources */,
 				9D168A3D1BF72E450026D2F7 /* Frameworks */,
 				9D168A3E1BF72E450026D2F7 /* Resources */,
+				1BCF56131C01BC7800566B6E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1BCF560A1C01BC7800566B6E /* PBXTargetDependency */,
 			);
 			name = pizzea;
 			productName = pizzea;
@@ -176,6 +312,12 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Fernando Ransanz";
 				TargetAttributes = {
+					1BCF55EC1C01BC7700566B6E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1BCF55F81C01BC7800566B6E = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					9D168A3F1BF72E450026D2F7 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -200,11 +342,30 @@
 			targets = (
 				9D168A3F1BF72E450026D2F7 /* pizzea */,
 				9D168A541BF72E450026D2F7 /* pizzeaTests */,
+				1BCF55EC1C01BC7700566B6E /* pizzeaWatch */,
+				1BCF55F81C01BC7800566B6E /* pizzeaWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1BCF55EB1C01BC7700566B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCF55F31C01BC7800566B6E /* Assets.xcassets in Resources */,
+				1BCF55F11C01BC7800566B6E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCF55F71C01BC7800566B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCF56071C01BC7800566B6E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D168A3E1BF72E450026D2F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,6 +387,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1BCF55F51C01BC7800566B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCF56051C01BC7800566B6E /* NotificationController.swift in Sources */,
+				1BCF56031C01BC7800566B6E /* ExtensionDelegate.swift in Sources */,
+				1BCF56011C01BC7800566B6E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D168A3C1BF72E450026D2F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +421,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1BCF55FC1C01BC7800566B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCF55F81C01BC7800566B6E /* pizzeaWatch Extension */;
+			targetProxy = 1BCF55FB1C01BC7800566B6E /* PBXContainerItemProxy */;
+		};
+		1BCF560A1C01BC7800566B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCF55EC1C01BC7700566B6E /* pizzeaWatch */;
+			targetProxy = 1BCF56091C01BC7800566B6E /* PBXContainerItemProxy */;
+		};
 		9D168A571BF72E450026D2F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D168A3F1BF72E450026D2F7 /* pizzea */;
@@ -258,6 +439,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1BCF55EF1C01BC7800566B6E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCF55F01C01BC7800566B6E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		9D168A491BF72E450026D2F7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +466,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1BCF560C1C01BC7800566B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = pizzeaWatch_Extension;
+				INFOPLIST_FILE = pizzeaWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.coursera.pizzea.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1BCF560D1C01BC7800566B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = pizzeaWatch_Extension;
+				INFOPLIST_FILE = pizzeaWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.coursera.pizzea.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		1BCF560E1C01BC7800566B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "pizzeaWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.coursera.pizzea.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1BCF560F1C01BC7800566B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "pizzeaWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.coursera.pizzea.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		9D168A5D1BF72E450026D2F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +672,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1BCF56101C01BC7800566B6E /* Build configuration list for PBXNativeTarget "pizzeaWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCF560E1C01BC7800566B6E /* Debug */,
+				1BCF560F1C01BC7800566B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BCF56121C01BC7800566B6E /* Build configuration list for PBXNativeTarget "pizzeaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCF560C1C01BC7800566B6E /* Debug */,
+				1BCF560D1C01BC7800566B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9D168A3B1BF72E440026D2F7 /* Build configuration list for PBXProject "pizzea" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
