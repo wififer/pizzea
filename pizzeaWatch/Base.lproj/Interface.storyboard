@@ -13,7 +13,7 @@
                         <label alignment="center" text="Pizee su tamaño" textAlignment="left" id="mSF-IH-W7L"/>
                         <picker height="100" alignment="left" id="cEy-dA-4SI">
                             <connections>
-                                <action selector="toMasa" destination="AgC-eL-Hgc" id="gvz-jg-YGR"/>
+                                <action selector="pickerSelector:" destination="AgC-eL-Hgc" id="sob-yd-KNn"/>
                             </connections>
                         </picker>
                         <button width="1" alignment="left" title="Siguiente" id="KxL-MO-GJn">
