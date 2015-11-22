@@ -40,7 +40,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func toMasa() {
         
         if miTamano == "" {
-            miTamano = "Grande"
+           miTamano = "Grande"
         }
         let pizzaContexto = Pizza(t: miTamano, m: "", q: "", i: [])
         pushControllerWithName("tamanoToMasa", context: pizzaContexto)

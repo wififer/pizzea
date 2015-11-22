@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" userLabel="Tamaño Interface Controller" customClass="InterfaceController" customModule="pizzeaWatch" customModuleProvider="target">
                     <items>
-                        <label alignment="center" text="Pizee su tamaño" textAlignment="left" id="mSF-IH-W7L"/>
+                        <label width="1" alignment="center" text="Pizee su tamaño" textAlignment="center" id="mSF-IH-W7L"/>
                         <picker height="100" alignment="left" id="cEy-dA-4SI">
                             <connections>
                                 <action selector="pickerSelector:" destination="AgC-eL-Hgc" id="sob-yd-KNn"/>
@@ -32,7 +32,24 @@
         <!--Masa Interface Controller-->
         <scene sceneID="dMv-6B-C5f">
             <objects>
-                <controller identifier="tamanoToMasa" id="YMg-2S-mGr" userLabel="Masa Interface Controller" customClass="MasaInterfaceController" customModule="pizzeaWatch_Extension"/>
+                <controller identifier="tamanoToMasa" id="YMg-2S-mGr" userLabel="Masa Interface Controller" customClass="MasaInterfaceController" customModule="pizzeaWatch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Pizee su masa" textAlignment="center" id="3Z6-vz-W6t"/>
+                        <picker height="100" alignment="left" id="y9Y-RE-7hE">
+                            <connections>
+                                <action selector="pickerSelector:" destination="YMg-2S-mGr" id="pwU-YB-Sx2"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="fji-CI-RSN">
+                            <connections>
+                                <action selector="toQueso" destination="YMg-2S-mGr" id="Ha0-U7-gSf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="masaPk" destination="y9Y-RE-7hE" id="N1p-hx-XP0"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="409" y="346"/>
         </scene>
