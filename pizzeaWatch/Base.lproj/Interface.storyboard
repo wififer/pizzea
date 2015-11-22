@@ -53,6 +53,30 @@
             </objects>
             <point key="canvasLocation" x="409" y="346"/>
         </scene>
+        <!--Queso Interface Controller-->
+        <scene sceneID="cVm-wo-Cn9">
+            <objects>
+                <controller identifier="masaToQueso" id="aOM-w5-TQo" userLabel="Queso Interface Controller" customClass="QuesoInterfaceController" customModule="pizzeaWatch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Pizee su queso" textAlignment="center" id="Oov-Go-8to"/>
+                        <picker height="100" alignment="left" id="hZA-nz-HQ1">
+                            <connections>
+                                <action selector="pickerSelector:" destination="aOM-w5-TQo" id="H7Z-ww-gnn"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="bpz-Qy-agL">
+                            <connections>
+                                <action selector="toIngredientes" destination="aOM-w5-TQo" id="Esy-zq-IIs"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="quesoPk" destination="hZA-nz-HQ1" id="oaJ-06-N3Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="611" y="346"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
