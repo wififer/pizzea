@@ -14,7 +14,7 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var tamanoPk: WKInterfacePicker!
     var tamanos = ["Grande","Mediana", "Chica"]
-    var miTamano:String = "Grande"
+    var miTamano:String = ""
    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -39,6 +39,9 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func toMasa() {
         
+        if miTamano == "" {
+            miTamano = "Grande"
+        }
         let pizzaContexto = Pizza(t: miTamano, m: "", q: "", i: [])
         pushControllerWithName("tamanoToMasa", context: pizzaContexto)
         
@@ -50,7 +53,7 @@ class InterfaceController: WKInterfaceController {
             self.miTamano = "Grande"
         }else if (value == 1) {
             self.miTamano = "Mediana"
-        }else if (value == 1) {
+        }else if (value == 2) {
             self.miTamano = "Chica"
         }else{
             self.miTamano = "Grande"
