@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Tamaño Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="pizzeaWatch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" userLabel="Tamaño Interface Controller" customClass="InterfaceController" customModule="pizzeaWatch" customModuleProvider="target">
                     <items>
                         <label alignment="center" text="Pizee su tamaño" textAlignment="left" id="mSF-IH-W7L"/>
                         <picker height="100" alignment="left" id="cEy-dA-4SI">
@@ -28,6 +28,13 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Masa Interface Controller-->
+        <scene sceneID="dMv-6B-C5f">
+            <objects>
+                <controller identifier="tamanoToMasa" id="YMg-2S-mGr" userLabel="Masa Interface Controller" customClass="MasaInterfaceController" customModule="pizzeaWatch_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="346"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

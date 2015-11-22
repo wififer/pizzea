@@ -38,6 +38,10 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func toMasa() {
+        
+        let pizzaContexto = Pizza(t: miTamano, m: "", q: "", i: [])
+        pushControllerWithName("tamanoToMasa", context: pizzaContexto)
+        
     }
     
     @IBAction func pickerSelector(value: Int) {
