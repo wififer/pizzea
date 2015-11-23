@@ -56,7 +56,7 @@ class IngredietesInterfaceController: WKInterfaceController {
         if (ingredientes.count != 0){
             
             let pizzaContexto = Pizza(t: miTamano, m: miMasa, q: miQueso, i: ingredientes)
-            pushControllerWithName("ingredientesToConfirmacion", context: pizzaContexto)
+            pushControllerWithName("ingredientesToConfirmar", context: pizzaContexto)
             
         }else{
             print("No ha seleccionado ingredientes")

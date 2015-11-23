@@ -30,6 +30,7 @@
 		9D1D0B7B1BF8A9590069D360 /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */; };
 		9DB46E531BF928C400814E80 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DB46E521BF928C400814E80 /* .gitignore */; };
 		F22D00611C0308D200D02C1B /* IngredietesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D00601C0308D200D02C1B /* IngredietesInterfaceController.swift */; };
+		F22D00631C0331CA00D02C1B /* ConfirmarInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D00621C0331C900D02C1B /* ConfirmarInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		9D1D0B7A1BF8A9590069D360 /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
 		9DB46E521BF928C400814E80 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F22D00601C0308D200D02C1B /* IngredietesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredietesInterfaceController.swift; sourceTree = "<group>"; };
+		F22D00621C0331C900D02C1B /* ConfirmarInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmarInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				1BCF56161C01DF7D00566B6E /* MasaInterfaceController.swift */,
 				1BCF56181C01F59C00566B6E /* QuesoInterfaceController.swift */,
 				F22D00601C0308D200D02C1B /* IngredietesInterfaceController.swift */,
+				F22D00621C0331C900D02C1B /* ConfirmarInterfaceController.swift */,
 			);
 			path = "pizzeaWatch Extension";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				1BCF56031C01BC7800566B6E /* ExtensionDelegate.swift in Sources */,
 				1BCF56011C01BC7800566B6E /* InterfaceController.swift in Sources */,
 				F22D00611C0308D200D02C1B /* IngredietesInterfaceController.swift in Sources */,
+				F22D00631C0331CA00D02C1B /* ConfirmarInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

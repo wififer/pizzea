@@ -161,6 +161,53 @@
             </objects>
             <point key="canvasLocation" x="804" y="343.5"/>
         </scene>
+        <!--Confirmacion Interface Controller-->
+        <scene sceneID="wig-qr-XPc">
+            <objects>
+                <controller identifier="ingredientesToConfirmar" id="8cz-2f-4b1" userLabel="Confirmacion Interface Controller" customClass="ConfirmarInterfaceController" customModule="pizzeaWatch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Esta es su pizza" textAlignment="center" id="RMg-uQ-pzs"/>
+                        <group width="1" alignment="left" id="Bya-3L-nTZ">
+                            <items>
+                                <label alignment="left" text="Tamaño:" id="UkA-gH-vNb"/>
+                                <label alignment="right" text="Label" textAlignment="center" id="SBD-8h-B0t"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="2Au-xr-6n0">
+                            <items>
+                                <label alignment="left" text="Masa:" id="Ij4-Gs-MMA"/>
+                                <label alignment="right" text="Label" id="064-vL-yih"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="r4A-ZW-Pfs">
+                            <items>
+                                <label alignment="left" text="Queso" id="dZF-rL-0nY"/>
+                                <label alignment="right" text="Label" id="4ht-JT-d1h"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="oED-E8-NQJ">
+                            <items>
+                                <label alignment="left" text="Ingredientes:" id="v3Q-el-JbG"/>
+                                <label alignment="center" text="Label" numberOfLines="0" id="Zuf-x5-jVd"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Para cambiar vaya hacia atrás" minimumScaleFactor="0.40000000000000002" id="fn4-dl-Qq8"/>
+                        <button width="1" alignment="left" title="Enviar" id="UEV-pO-PJq">
+                            <connections>
+                                <action selector="enviar" destination="8cz-2f-4b1" id="WhW-bs-6Md"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ingredientes" destination="Zuf-x5-jVd" id="elX-f2-Mz0"/>
+                        <outlet property="masa" destination="064-vL-yih" id="lQY-mr-l1X"/>
+                        <outlet property="queso" destination="4ht-JT-d1h" id="gMh-TD-sDf"/>
+                        <outlet property="tamano" destination="SBD-8h-B0t" id="eA4-eT-I2G"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="996" y="346"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
