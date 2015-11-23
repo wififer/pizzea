@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9527.1" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9513.1"/>
     </dependencies>
     <scenes>
         <!--Tamaño Interface Controller-->
@@ -11,11 +11,13 @@
                 <controller id="AgC-eL-Hgc" userLabel="Tamaño Interface Controller" customClass="InterfaceController" customModule="pizzeaWatch" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="center" text="Pizee su tamaño" textAlignment="center" id="mSF-IH-W7L"/>
+                        <separator alignment="left" id="cgL-77-lUF"/>
                         <picker height="100" alignment="left" id="cEy-dA-4SI">
                             <connections>
                                 <action selector="pickerSelector:" destination="AgC-eL-Hgc" id="sob-yd-KNn"/>
                             </connections>
                         </picker>
+                        <separator alignment="left" id="9Xr-Np-L77"/>
                         <button width="1" alignment="left" title="Siguiente" id="KxL-MO-GJn">
                             <connections>
                                 <action selector="toMasa" destination="AgC-eL-Hgc" id="vbG-3b-iAq"/>
@@ -35,11 +37,13 @@
                 <controller identifier="tamanoToMasa" id="YMg-2S-mGr" userLabel="Masa Interface Controller" customClass="MasaInterfaceController" customModule="pizzeaWatch_Extension">
                     <items>
                         <label width="1" alignment="left" text="Pizee su masa" textAlignment="center" id="3Z6-vz-W6t"/>
+                        <separator alignment="left" id="53A-MN-IBi"/>
                         <picker height="100" alignment="left" id="y9Y-RE-7hE">
                             <connections>
                                 <action selector="pickerSelector:" destination="YMg-2S-mGr" id="pwU-YB-Sx2"/>
                             </connections>
                         </picker>
+                        <separator alignment="left" id="97W-pX-Eeb"/>
                         <button width="1" alignment="left" title="Siguiente" id="fji-CI-RSN">
                             <connections>
                                 <action selector="toQueso" destination="YMg-2S-mGr" id="Ha0-U7-gSf"/>
@@ -59,11 +63,13 @@
                 <controller identifier="masaToQueso" id="aOM-w5-TQo" userLabel="Queso Interface Controller" customClass="QuesoInterfaceController" customModule="pizzeaWatch_Extension">
                     <items>
                         <label width="1" alignment="left" text="Pizee su queso" textAlignment="center" id="Oov-Go-8to"/>
+                        <separator alignment="left" id="om0-Zu-hJi"/>
                         <picker height="100" alignment="left" id="hZA-nz-HQ1">
                             <connections>
                                 <action selector="pickerSelector:" destination="aOM-w5-TQo" id="H7Z-ww-gnn"/>
                             </connections>
                         </picker>
+                        <separator alignment="left" id="FgJ-m1-KX3"/>
                         <button width="1" alignment="left" title="Siguiente" id="bpz-Qy-agL">
                             <connections>
                                 <action selector="toIngredientes" destination="aOM-w5-TQo" id="Esy-zq-IIs"/>
@@ -76,6 +82,53 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="611" y="346"/>
+        </scene>
+        <!--Ingredientes Interface Controller-->
+        <scene sceneID="ysM-Qx-9rc">
+            <objects>
+                <controller identifier="quesoToIngredientes" id="pVL-WM-rP7" userLabel="Ingredientes Interface Controller" customClass="IngredietesInterfaceController" customModule="pizzeaWatch_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Pizee sus ingredientes" textAlignment="center" minimumScaleFactor="0.40000000000000002" id="PAM-xt-zhY"/>
+                        <separator alignment="left" id="o62-v4-nuU"/>
+                        <group width="1" alignment="left" layout="vertical" id="dBg-5k-pLf" userLabel="Contenedor ingredientes">
+                            <items>
+                                <group width="125" height="44" alignment="left" id="dDL-YJ-apU" userLabel="Jamon Group">
+                                    <items>
+                                        <label width="63" alignment="left" text="Jamón" id="RUp-lc-P3J"/>
+                                        <switch width="57" height="33" alignment="left" value="YES" id="JGS-ac-vmf"/>
+                                    </items>
+                                </group>
+                                <group width="1" height="48" alignment="left" id="lH1-uC-hgx" userLabel="Pepperoni Group">
+                                    <items>
+                                        <label alignment="left" text="Pepperoni" id="0Cj-eY-9EN"/>
+                                        <switch width="47" height="28" alignment="left" value="YES" id="6qF-dx-GUW"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="YF0-ju-jO5" userLabel="Cebolla Group">
+                                    <items>
+                                        <label alignment="left" text="Cebolla" id="dwX-zW-YQA"/>
+                                        <switch width="70" height="30" alignment="left" value="YES" id="gYY-un-Iss"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="zZg-I1-oXO" userLabel="Pimiento Group">
+                                    <items>
+                                        <label alignment="left" text="Pimiento" id="L6k-Vg-V7a"/>
+                                        <switch width="61" alignment="left" value="YES" id="rox-5c-267"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Qba-fS-MK8" userLabel="Anchoa Group">
+                                    <items>
+                                        <label alignment="left" text="Anchoa" id="hFe-qJ-mat"/>
+                                        <switch width="74" alignment="left" value="YES" id="fkE-LX-w2W"/>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" title="Siguiente" id="hzi-Ch-hhq"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="804" y="343.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
