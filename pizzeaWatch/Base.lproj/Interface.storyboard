@@ -95,37 +95,68 @@
                                 <group width="125" height="44" alignment="left" id="dDL-YJ-apU" userLabel="Jamon Group">
                                     <items>
                                         <label width="63" alignment="left" text="Jamón" id="RUp-lc-P3J"/>
-                                        <switch width="57" height="33" alignment="left" value="YES" id="JGS-ac-vmf"/>
+                                        <switch width="57" height="33" alignment="left" id="JGS-ac-vmf">
+                                            <connections>
+                                                <action selector="jamonEstado:" destination="pVL-WM-rP7" id="ZgS-rB-zOd"/>
+                                            </connections>
+                                        </switch>
                                     </items>
                                 </group>
                                 <group width="1" height="48" alignment="left" id="lH1-uC-hgx" userLabel="Pepperoni Group">
                                     <items>
                                         <label alignment="left" text="Pepperoni" id="0Cj-eY-9EN"/>
-                                        <switch width="47" height="28" alignment="left" value="YES" id="6qF-dx-GUW"/>
+                                        <switch width="47" height="28" alignment="left" id="6qF-dx-GUW">
+                                            <connections>
+                                                <action selector="pepperoniEstado:" destination="pVL-WM-rP7" id="74C-ce-ViF"/>
+                                            </connections>
+                                        </switch>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="YF0-ju-jO5" userLabel="Cebolla Group">
                                     <items>
                                         <label alignment="left" text="Cebolla" id="dwX-zW-YQA"/>
-                                        <switch width="70" height="30" alignment="left" value="YES" id="gYY-un-Iss"/>
+                                        <switch width="70" height="30" alignment="left" id="gYY-un-Iss">
+                                            <connections>
+                                                <action selector="ceboallaEstado:" destination="pVL-WM-rP7" id="qRe-lV-jiB"/>
+                                            </connections>
+                                        </switch>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="zZg-I1-oXO" userLabel="Pimiento Group">
                                     <items>
                                         <label alignment="left" text="Pimiento" id="L6k-Vg-V7a"/>
-                                        <switch width="61" alignment="left" value="YES" id="rox-5c-267"/>
+                                        <switch width="61" alignment="left" id="rox-5c-267">
+                                            <connections>
+                                                <action selector="pimientoEstado:" destination="pVL-WM-rP7" id="g2k-6r-csM"/>
+                                            </connections>
+                                        </switch>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="Qba-fS-MK8" userLabel="Anchoa Group">
                                     <items>
                                         <label alignment="left" text="Anchoa" id="hFe-qJ-mat"/>
-                                        <switch width="74" alignment="left" value="YES" id="fkE-LX-w2W"/>
+                                        <switch width="74" alignment="left" id="fkE-LX-w2W">
+                                            <connections>
+                                                <action selector="anchoaEstado:" destination="pVL-WM-rP7" id="rvo-Qx-29C"/>
+                                            </connections>
+                                        </switch>
                                     </items>
                                 </group>
-                                <button width="1" alignment="left" title="Siguiente" id="hzi-Ch-hhq"/>
+                                <button width="1" alignment="left" title="Siguiente" id="hzi-Ch-hhq">
+                                    <connections>
+                                        <action selector="toResumen" destination="pVL-WM-rP7" id="csN-t2-att"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="anchoaSW" destination="fkE-LX-w2W" id="rxt-2J-pai"/>
+                        <outlet property="cebollaSW" destination="gYY-un-Iss" id="tc4-qM-y08"/>
+                        <outlet property="jamonSW" destination="JGS-ac-vmf" id="egD-iF-Sjd"/>
+                        <outlet property="pepperoniSW" destination="6qF-dx-GUW" id="n4d-3Z-zbR"/>
+                        <outlet property="pimientoSW" destination="rox-5c-267" id="EL1-dX-U1Z"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="804" y="343.5"/>

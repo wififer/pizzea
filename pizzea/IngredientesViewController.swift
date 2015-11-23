@@ -14,14 +14,6 @@ class IngredientesViewController: UIViewController {
     var  toPassMasa:String = ""
     var  toPassQueso:String = ""
     var  ingredientes:[String] = []
-    var posJamon = 0
-    var posPepperoni = 0
-    var posCebolla = 0
-    var posPimiento = 0
-    var posAnchoa = 0
-
-
-
     @IBOutlet weak var jamonSw: UISwitch!
     
     @IBOutlet weak var pepperoniSw: UISwitch!
@@ -98,31 +90,28 @@ class IngredientesViewController: UIViewController {
         if switchState.on {
             print("Jamon")
             ingredientes.insert("Jamon",atIndex:ingredientes.count)
-            posJamon = ingredientes.count-1
             
         } else {
-            ingredientes.removeAtIndex(posJamon)
-            
+            let pos = ingredientes.indexOf("Jamon")
+            ingredientes.removeAtIndex(pos!)
         }
     }
     
     func stateChangedPepperoni(switchState: UISwitch) {
                  if switchState.on {
             ingredientes.insert("Pepperoni",atIndex:ingredientes.count)
-            posPepperoni = ingredientes.count-1
         } else {
-            ingredientes.removeAtIndex(posPepperoni)
-            
+                    let pos = ingredientes.indexOf("Pepperoni")
+                    ingredientes.removeAtIndex(pos!)
         }
     }
     
     func stateChangedCebolla(switchState: UISwitch) {
         if switchState.on {
             ingredientes.insert("Cebolla",atIndex:ingredientes.count)
-            posCebolla = ingredientes.count-1
         } else {
-            ingredientes.removeAtIndex(posCebolla)
-            
+            let pos = ingredientes.indexOf("Cebolla")
+            ingredientes.removeAtIndex(pos!)
         }
     }
     
@@ -130,10 +119,9 @@ class IngredientesViewController: UIViewController {
         if switchState.on {
             print("Pimiento")
             ingredientes.insert("Pimiento",atIndex:ingredientes.count)
-            posPimiento = ingredientes.count-1
         } else {
-            ingredientes.removeAtIndex(posPimiento)
-            
+            let pos = ingredientes.indexOf("Pimiento")
+            ingredientes.removeAtIndex(pos!)
         }
     }
     
@@ -141,11 +129,10 @@ class IngredientesViewController: UIViewController {
         if switchState.on {
             print("Anchoa add")
             ingredientes.insert("Anchoa",atIndex:ingredientes.count)
-            posAnchoa = ingredientes.count-1
         } else {
             print("Anchoa OFF")
-            ingredientes.removeAtIndex(posAnchoa)
-            
+            let pos = ingredientes.indexOf("Anchoa")
+            ingredientes.removeAtIndex(pos!)
         }
     }
 
